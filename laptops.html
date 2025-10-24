@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops | Nexus.Tech</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <header id="header">
+        <nav class="container">
+            <a href="index.html" class="nav-logo">NEXUS</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="laptops.html" class="nav-link">Laptops</a></li>
+                    <li><a href="smartphones.html" class="nav-link">Smartphones</a></li>
+                    <li><a href="audio.html" class="nav-link">Audio</a></li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <i class="fa-solid fa-magnifying-glass nav-icon"></i>
+                <i class="fa-solid fa-user nav-icon"></i>
+                <div id="cart-icon" class="cart-icon-wrapper">
+                    <i class="fa-solid fa-cart-shopping nav-icon"></i>
+                    <span id="cart-badge" class="cart-badge">0</span>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header-section">
+            <div class="container">
+                <h1 class="page-title">Jelajahi Laptop Kami</h1>
+                <p class="page-subtitle">Performa tinggi bertemu desain memukau.</p>
+            </div>
+        </section>
+
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="products-grid">
+                    <!-- Produk 1: NexusBook Pro M4 -->
+                    <div class="product-card fade-in">
+                        <div class="card-image"><img src="img/book-m4-pro.jpg" alt="NexusBook Pro M4"></div>
+                        <div class="card-content">
+                            <!-- === STRUKTUR HTML BARU DIMULAI DI SINI === -->
+                            <div class="card-top-info">
+                                <h3 class="card-title">NexusBook Pro M4</h3>
+                                <p class="card-description">Kekuatan Pro dibawa ke level berikutnya. Sempurna untuk profesional kreatif yang menginginkan performa tanpa kompromi.</p>
+                            </div>
+                            <div class="card-bottom-actions">
+                                <ul class="card-specs">
+                                    <li><i class="fa-solid fa-microchip"></i> Chip M4 Pro</li>
+                                    <li><i class="fa-solid fa-sd-card"></i> 512GB SSD</li>
+                                    <li><i class="fa-solid fa-memory"></i> 16GB RAM</li>
+                                    <li><i class="fa-solid fa-display"></i> 16" Liquid Retina XDR</li>
+                                </ul>
+                                <a href="#" class="btn-buy-now" data-modal="modal-laptop-pro">Pilih Varian</a>
+                            </div>
+                            <!-- === STRUKTUR HTML BARU SELESAI DI SINI === -->
+                        </div>
+                    </div>
+                    <!-- Produk 2: NexusBook Air M4 -->
+                    <div class="product-card fade-in">
+                        <div class="card-image"><img src="img/book-m4-air.jpg" alt="NexusBook Air M4"></div>
+                        <div class="card-content">
+                             <!-- === STRUKTUR HTML BARU DIMULAI DI SINI === -->
+                             <div class="card-top-info">
+                                <h3 class="card-title">NexusBook Air M4</h3>
+                                <p class="card-description">Super ringan, super cepat. Desain portabel yang luar biasa dengan daya tahan baterai sepanjang hari untuk bekerja di mana saja.</p>
+                            </div>
+                            <div class="card-bottom-actions">
+                                <ul class="card-specs">
+                                    <li><i class="fa-solid fa-microchip"></i> Chip M4</li>
+                                    <li><i class="fa-solid fa-sd-card"></i> 256GB SSD</li>
+                                    <li><i class="fa-solid fa-memory"></i> 8GB RAM</li>
+                                    <li><i class="fa-solid fa-display"></i> 13.6" Liquid Retina</li>
+                                </ul>
+                                <a href="#" class="btn-buy-now" data-modal="modal-laptop-air">Pilih Varian</a>
+                            </div>
+                             <!-- === STRUKTUR HTML BARU SELESAI DI SINI === -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal untuk NexusBook Pro 16 -->
+    <div class="modal" id="modal-laptop-pro">
+        <div class="modal-content">
+            <i class="fa-solid fa-xmark modal-close"></i>
+            <h2 class="modal-title">NexusBook Pro 16</h2>
+            <p class="modal-subtitle">Pilih spesifikasi yang Anda inginkan.</p>
+            <div class="variant-list">
+                <div class="variant-item" data-storage="16GB RAM / 512GB SSD" data-price="$2,499">
+                    <span class="variant-storage">16GB RAM / 512GB SSD</span>
+                    <span class="variant-price">$2,499</span>
+                </div>
+                <div class="variant-item" data-storage="32GB RAM / 1TB SSD" data-price="$2,899">
+                    <span class="variant-storage">32GB RAM / 1TB SSD</span>
+                    <span class="variant-price">$2,899</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk NexusBook Air -->
+    <div class="modal" id="modal-laptop-air">
+        <div class="modal-content">
+            <i class="fa-solid fa-xmark modal-close"></i>
+            <h2 class="modal-title">NexusBook Air</h2>
+            <p class="modal-subtitle">Pilih spesifikasi yang Anda inginkan.</p>
+            <div class="variant-list">
+                <div class="variant-item" data-storage="8GB RAM / 256GB SSD" data-price="$1,299">
+                    <span class="variant-storage">8GB RAM / 256GB SSD</span>
+                    <span class="variant-price">$1,299</span>
+                </div>
+                <div class="variant-item" data-storage="16GB RAM / 512GB SSD" data-price="$1,599">
+                    <span class="variant-storage">16GB RAM / 512GB SSD</span>
+                    <span class="variant-price">$1,599</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sidebar Keranjang (Sama untuk semua halaman) -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3 class="cart-title">Keranjang Anda</h3>
+                <i class="fa-solid fa-xmark cart-close"></i>
+            </div>
+            <div id="cart-items-list" class="cart-items-list">
+                <p class="cart-empty-message">Keranjang Anda masih kosong.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total</span>
+                    <span id="cart-total-price">$0.00</span>
+                </div>
+                <a href="#" class="btn btn-primary checkout-btn">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2024 Nexus.Tech. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

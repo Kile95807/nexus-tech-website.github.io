@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio | Nexus.Tech</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <header id="header">
+        <nav class="container">
+            <a href="index.html" class="nav-logo">NEXUS</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="laptops.html" class="nav-link">Laptops</a></li>
+                    <li><a href="smartphones.html" class="nav-link">Smartphones</a></li>
+                    <li><a href="audio.html" class="nav-link">Audio</a></li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <i class="fa-solid fa-magnifying-glass nav-icon"></i>
+                <i class="fa-solid fa-user nav-icon"></i>
+                <div id="cart-icon" class="cart-icon-wrapper">
+                    <i class="fa-solid fa-cart-shopping nav-icon"></i>
+                    <span id="cart-badge" class="cart-badge">0</span>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header-section">
+            <div class="container">
+                <h1 class="page-title">Rasakan Suara yang Imersif</h1>
+                <p class="page-subtitle">Nikmati audio berkualitas tinggi dengan perangkat premium kami.</p>
+            </div>
+        </section>
+
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="products-grid">
+                    <!-- Produk 1: NexusPods Max -->
+                    <div class="product-card fade-in">
+                        <div class="card-image"><img src="img/pods-max.jpg" alt="NexusPods Max"></div>
+                        <div class="card-content">
+                            <div>
+                                <h3 class="card-title">NexusPods Max</h3>
+                                <p class="card-description">Audio fidelitas tinggi bertemu dengan peredam bising terbaik. Pengalaman mendengar yang tak tertandingi.</p>
+                                <ul class="card-specs">
+                                    <li><i class="fa-solid fa-ear-listen"></i> Active Noise Cancellation</li>
+                                    <li><i class="fa-solid fa-cube"></i> Spatial Audio</li>
+                                    <li><i class="fa-solid fa-battery-full"></i> Daya Tahan Baterai 20 Jam</li>
+                                    <li><i class="fa-solid fa-headphones"></i> High-Fidelity Audio Driver</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn-buy-now" data-modal="modal-pods-max">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <!-- Produk 2: NexusPods Pro -->
+                    <div class="product-card fade-in">
+                        <div class="card-image"><img src="img/pods-pro.jpg" alt="NexusPods Pro"></div>
+                        <div class="card-content">
+                            <div>
+                                <h3 class="card-title">NexusPods Pro</h3>
+                                <p class="card-description">Suara yang kaya dan jernih dalam desain yang ringkas. Teman sempurna untuk setiap aktivitas.</p>
+                                <ul class="card-specs">
+                                    <li><i class="fa-solid fa-ear-listen"></i> Active Noise Cancellation</li>
+                                    <li><i class="fa-solid fa-droplet"></i> Tahan Keringat & Air</li>
+                                    <li><i class="fa-solid fa-charging-station"></i> Casing Pengisi Daya MagSafe</li>
+                                    <li><i class="fa-solid fa-gear"></i> Fit yang Dapat Disesuaikan</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn-buy-now" data-modal="modal-pods-pro">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal untuk NexusPods Max -->
+    <div class="modal" id="modal-pods-max">
+        <div class="modal-content">
+            <i class="fa-solid fa-xmark modal-close"></i>
+            <h2 class="modal-title">NexusPods Max</h2>
+            <p class="modal-subtitle">Audio fidelitas tinggi dengan peredam bising aktif.</p>
+            <div class="variant-list">
+                <div class="variant-item" data-storage="Silver" data-price="$549">
+                    <span class="variant-storage">Silver</span>
+                    <span class="variant-price">$549</span>
+                </div>
+                 <div class="variant-item" data-storage="Space Gray" data-price="$549">
+                    <span class="variant-storage">Space Gray</span>
+                    <span class="variant-price">$549</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk NexusPods Pro -->
+    <div class="modal" id="modal-pods-pro">
+        <div class="modal-content">
+            <i class="fa-solid fa-xmark modal-close"></i>
+            <h2 class="modal-title">NexusPods Pro</h2>
+            <p class="modal-subtitle">Desain ringkas dengan mode transparansi adaptif.</p>
+            <div class="variant-list">
+                <div class="variant-item" data-storage="White" data-price="$249">
+                    <span class="variant-storage">White</span>
+                    <span class="variant-price">$249</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Keranjang (Sama untuk semua halaman) -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3 class="cart-title">Keranjang Anda</h3>
+                <i class="fa-solid fa-xmark cart-close"></i>
+            </div>
+            <div id="cart-items-list" class="cart-items-list">
+                <p class="cart-empty-message">Keranjang Anda masih kosong.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total</span>
+                    <span id="cart-total-price">$0.00</span>
+                </div>
+                <a href="#" class="btn btn-primary checkout-btn">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Nexus.Tech. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
